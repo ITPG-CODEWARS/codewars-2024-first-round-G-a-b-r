@@ -1,0 +1,90 @@
+/* За по-големи екрани (настолни компютри) */
+@media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+}
+
+/* За мобилни устройства */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 100%; /* За мобилни устройства */
+}
+
+@media (min-width: 768px) {
+    .item {
+      flex: 1 1 50%; /* За таблети и по-големи екрани */
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+      flex: 1 1 33.33%; /* За по-големи екрани */
+    }
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0,5%; /* Добавено отстояние между елементите */
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px; /* padding в пиксели за по-добър контрол */
+    text-decoration: none;
+    justify-content: center;
+}
+
+li a:hover:not(.active) {
+    background-color: hsl(236, 70%, 77%);
+}
+
+.active {
+    background-color: hsl(236, 70%, 77%);
+}
+
+header {
+    text-align: center;
+    background-color: hsl(236, 70%, 77%);
+    padding: 1% 0; /* добавяне на padding за header в проценти */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333; /* Цветът на фона на navbar-а */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /* За да се гарантира, че navbar остава най-отгоре */
+}
