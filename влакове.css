@@ -79,21 +79,3 @@ header {
     
 
 }
-.info-button {
-    display: inline-block; /* Позволява на бутона да има размери */
-    padding: 10px 20px; /* Вътрешно отстояние за визуален комфорт */
-    background-color: #3f48cc; /* Цвета на фона */
-    color: white; /* Цвета на текста */
-    border: none; /* Без граница */
-    border-radius: 5px; /* Заоблени ъгли */
-    text-align: center; /* Центриране на текста */
-    text-decoration: none; /* Премахване на подчертаване от линка */
-    font-size: 16px; /* Размер на шрифта */
-    cursor: pointer; /* Визуален индикатор, че е кликаем */
-    transition: background-color 0.3s; /* Плавен преход за цвета на фона */
-}
-
-.info-button:hover {
-    background-color: #252fc3; /* Цвят при задържане на мишката */
-}
-
