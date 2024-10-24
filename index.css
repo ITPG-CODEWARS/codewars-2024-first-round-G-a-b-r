@@ -88,5 +88,48 @@ body, html {
     left: 0;
     z-index: 999; /* За да се гарантира, че navbar остава най-отгоре */
 }
+img {
+    max-width: 100%;  /* Предотвратява разтягане извън контейнера */
+         /* Запазва пропорциите на изображението */
+}
+/* Стил за навигационната лента */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Разпределя името и линковете */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Стил за името на сайта */
+.site-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Стил за линковете в navbar */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
 
      
