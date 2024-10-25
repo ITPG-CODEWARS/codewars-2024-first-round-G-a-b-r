@@ -62,16 +62,16 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: hsl(236, 70%, 77%);
+    background-color: #3d99ba;
 }
 
 .active {
-    background-color: hsl(236, 70%, 77%);
+    background-color: #3d99ba;
 }
 
 header {
     text-align: center;
-    background-color: hsl(236, 70%, 77%);
+    background-color: #3d99ba;
     padding: 1% 0; /* добавяне на padding за header в проценти */
 }
 
@@ -79,57 +79,20 @@ body, html {
     margin: 0;
     padding: 0;
 }
+body {
+        color: black;
+        background: #c8d1ce;
+}
 
 .navbar {
     width: 100%;
-    background-color: #333; /* Цветът на фона на navbar-а */
+    background-color: #3d99ba; /* Цветът на фона на navbar-а */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999; /* За да се гарантира, че navbar остава най-отгоре */
 }
-img {
-    max-width: 100%;  /* Предотвратява разтягане извън контейнера */
-         /* Запазва пропорциите на изображението */
-}
-/* Стил за навигационната лента */
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Разпределя името и линковете */
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
 
-/* Стил за името на сайта */
-.site-name {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Стил за линковете в navbar */
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
 
 
      
