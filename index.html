@@ -14,28 +14,47 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('заглавие,лого,мото.png'); 
             background-size: contain;  
-            background-attachment: fixed; 
+            background-attachment: fixed;
+            background-color: #c8d1ce; 
             color: #ffffff; 
             font-family: Arial, sans-serif;
-            background-position: bottom;
+            
+            
             
         }
+        
+    .content {
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    table {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            
+        }
+        td {
+            vertical-align: top;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+        .subtitle {
+            margin-top: 2%; /* Разстояние между изображението и текста */
+            font-size: 3rem; /* Размер на текста */
+            font-weight: bold; /* Удебелен текст */
+            color: black; /* Цвят на текста */
+        }
+</style>
     
         
-        .content {
-            padding: 0%;
-           
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
         
-
-    </style>
     
     
 
@@ -49,7 +68,16 @@
 
 
     </header>
-    <h1>Влакомания</h1>
+    
+    <table>
+        <tr>
+            <td>
+                <img src="заглавие,лого,мото.png" style = "width: 50%; height: 60%">
+                <div class="subtitle">Най-новите влакове</div> <!-- Добавен текст -->
+            </td>
+        </tr>
+    </table>
+
 
     
 </body>
