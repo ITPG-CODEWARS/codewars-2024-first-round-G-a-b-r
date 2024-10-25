@@ -92,7 +92,84 @@ body {
     left: 0;
     z-index: 999; /* За да се гарантира, че navbar остава най-отгоре */
 }
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрира съдържанието хоризонтално */
+    justify-content: top; /* Центрира съдържанието вертикално */
+    height: 100vh; /* Прави контейнера да заема цялата височина на екрана */
+    text-align: center; /* Центрира текста */
+}
 
+.header-container img {
+    width: 50%; /* Регулирай размера на изображението според нуждите си */
+    height: auto;
+    margin-bottom: 0.3rem; /* Разстояние между изображението и текста */
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* Стил за основния контейнер */
+.container {
+    display: flex;
+    justify-content: center; /* Центрирайте хоризонтално */
+    align-items: center; /* Центрирайте вертикално (ако имате височина) */
+    height: 100vh; /* Изпълнете височината на екрана, за да центрирате вертикално */
+}
+
+/* Стил за правоъгълника */
+.info-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Центрирайте в контейнера */
+}
+
+/* Стил за изображението */
+.info-image {
+    width: 50%;
+    height: 70%;
+    border-radius: 40px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+/* Стил за текстовата секция */
+.info-content h3 {
+    margin: 0;
+    font-size: 1rem; /* Променете на нормален размер */
+}
+
+.info-content p {
+    margin: 5px 0 0;
+    color: black;
+}
+
+/* Бутон за повече информация */
+.more-info-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.more-info-btn:hover {
+    background-color: #0056b3;
+}
 
 
      
