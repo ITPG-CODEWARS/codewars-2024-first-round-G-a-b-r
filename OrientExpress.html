@@ -1,46 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Влакове</title>
+    <title>European Sleeper</title>
 </head>
+
+<style>
+    h1 {
+        text-align: center; 
+        margin-top: 0.5%; 
+        margin-bottom: 1%; 
+        color: #333; 
+    }
+    header ul {
+        list-style: none;
+        padding: 0;
+    }
+    header ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    header ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .image-gallery img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+</style>
+
 <body>
 
-    <style>
-        body {
-            display: block;
-            justify-content: center; 
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    
-        table {
-            margin: 5%; 
-            text-align: center; 
-        }
-    
-        img {
-            width: 20%;
-            height: 30%;
-            display: block;
-            margin: auto; 
-        }
-    
-        p {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 20%;
-        }
-    </style>
-
-    <header>
+    <header> 
         <ul>
-    
             <li><a href="index.html">Начало</a></li>
-            <li><a href = "влакове.html">Влакове</a></li>
-            <li><a href = "контакти.html">Контакти</a></li>
-
+            <li><a class="active" href="влакове.html">Влакове</a></li>
+            <li><a href="контакти.html">Контакти</a></li>
+        </ul>
     </header>
+
+    <div class="content">
+        <h1>Orient Express</h1>
+        
+        <div class="section">
+            <h2>Основни характеристики:</h2>
+            <p>Произход: Orient Express е основан през 1883 г. от белгийската компания Compagnie Internationale des Wagons-Lits (CIWL) и първоначално свързва Париж с Константинопол (днешен Истанбул).<br>
+
+                Маршрут: Влакът преминава през множество ключови европейски столици, включително Виена, Будапеща, Загреб, и Белград, преди да достигне до Константинопол. С течение на времето маршрутът се променя, но основната концепция остава.<br>
+                
+                Лукс и удобства: Orient Express е известен със своето луксозно настаняване, включващо:<br>
+                
+                Спални вагони: Обзаведени с удобни легла, лични бани и изискан интериор.<br>
+                Ресторант: Влакът предлага висококачествени ястия, приготвени от готвачи, с избор на фини вина.<br>
+                Салони: За социализиране и отдих с комфортни места за сядане.<br>
+                Романтика и култура: Orient Express е не само транспортно средство, но и символ на приключения и лукс. Той е вдъхновил много книги, филми и художествени произведения, включително знаменития роман "Убийство в Ориент Експрес" от Агата Кристи.<br>
+        </div>
+
+        <div class="section">
+            <h2>История:</h2>
+            <p>1883: Първото пътуване на Orient Express.<br>
+                1914: Влакът достига до Истанбул, свързвайки Западна и Източна Европа.<br>
+                След Втората световна война: Популярността на Orient Express намалява, тъй като самолетите стават основен начин за пътуване.<br>
+                1977: Последното редовно пътуване на оригиналния Orient Express.</p>
+        </div>
+
+        <div class="section">
+            <h2>Съвременни версии:</h2>
+            <p>Въпреки че оригиналният Orient Express вече не е в експлоатация, концепцията за луксозни влакове продължава. Възстановените версии, като Venice Simplon-Orient-Express, предлагат подобни изживявания на пътуващите. Те включват маршрути, които обхващат емблематични европейски дестинации и предлагат уникално пътуване в исторически вагони, реновирани до оригиналния лукс.</p>
+        </div>
+
+        <div class="section">
+            <h2>Възраждане:</h2>
+            <p>Нови маршрути: След като оригиналният Orient Express е спрян през 2001 г., концепцията е възстановена с нови маршрути, включително "Venice Simplon-Orient-Express", който предлага исторически преживявания и маршрути, свързващи Лондон, Венеция и Париж.<br>
+
+                Културен символ: Orient Express е не само влак, но и културен символ, вдъхновил множество книги, филми и произведения на изкуството, включително класическия роман на Агата Кристи "Убийство в Ориент експрес".</p>
+        </div>
+
+        <div class="image-gallery">
+            <img src="orient-express-destinations.jpg" alt="Orient Express">
+            <img src="orient-express-interior.jpg" alt="Orient Express">
+            <img src="orient-express-cabin.jpg" alt="Orient Express">
+        </div>
+    </div>
+    
+</body>
+</html>
