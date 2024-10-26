@@ -1,46 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Влакове</title>
+    <title>European Sleeper</title>
 </head>
+
+<style>
+    h1 {
+        text-align: center; 
+        margin-top: 0.5%; 
+        margin-bottom: 1%; 
+        color: #333; 
+    }
+    header ul {
+        list-style: none;
+        padding: 0;
+    }
+    header ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    header ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .image-gallery img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+</style>
+
 <body>
 
-    <style>
-        body {
-            display: block;
-            justify-content: center; 
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    
-        table {
-            margin: 5%; 
-            text-align: center; 
-        }
-    
-        img {
-            width: 20%;
-            height: 30%;
-            display: block;
-            margin: auto; 
-        }
-    
-        p {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 20%;
-        }
-    </style>
-
-    <header>
+    <header> 
         <ul>
-    
             <li><a href="index.html">Начало</a></li>
-            <li><a href = "влакове.html">Влакове</a></li>
-            <li><a href = "контакти.html">Контакти</a></li>
-
+            <li><a class="active" href="влакове.html">Влакове</a></li>
+            <li><a href="контакти.html">Контакти</a></li>
+        </ul>
     </header>
+
+    <div class="content">
+        <h1>European Sleeper</h1>
+        
+        <div class="section">
+            <h2>Основни характеристики:</h2>
+            <p>Услуга: European Sleeper предлага нощни влакове, които свързват големи европейски градове. Основният акцент е върху комфорта на пътниците по време на дълги пътувания.<br>
+
+                Дестинации: Влакът свързва ключови градове в Европа, включително Амстердам, Берлин и Прага. Планират се и нови маршрути, които ще разширят обхвата на услугата.<br>
+                
+                Комфорт: Влаковете предлагат различни опции за настаняване, включително:<br>
+                
+                Купета за спане: Индивидуални или споделени стаи за по-комфортно пътуване.<br>
+                Класически седалки: Удобни места за пътници, които предпочитат по-икономичен вариант.<br>
+                Бар и ресторант: Някои влакове предлагат възможности за хранене на борда.<br>
+                Екологичност: Нощният транспорт е по-екологичен в сравнение с полетите, тъй като значително намалява въглеродните емисии на пътниците.<br>
+        </div>
+
+        <div class="section">
+            <h2>История и развитие:</h2>
+            <p>European Sleeper е стартиран от група предприемачи и железопътни експерти, които искат да възстановят интереса към нощния транспорт в Европа, след като много от традиционните нощни влакове бяха закрити през последните десетилетия. Идеята е да се предоставят алтернативи на полетите и да се насърчи устойчивият транспорт.</p>
+        </div>
+
+        <div class="section">
+            <h2>Оператори:</h2>
+            <p>Влаковете се управляват от независими оператори, които работят в сътрудничество с националните железопътни компании в различните страни.</p>
+        </div>
+
+        <div class="section">
+            <h2>Планирани маршрути:</h2>
+            <p>European Sleeper планира да разширява мрежата си, добавяйки нови маршрути и дестинации в бъдеще, в отговор на интереса на пътниците и потребностите на пазара.<br>
+
+                European Sleeper предлага удобен и устойчив начин за пътуване между големите градове в Европа, предоставяйки на пътниците уникалната възможност да се насладят на нощта по време на пътуването си.</p>
+        </div>
+
+        <div class="image-gallery">
+            <img src="european-sleeper.jpg" alt="European Sleeper">
+            <img src="europeansleeper_.jpg" alt="European Sleeper">
+            <img src="european-sleeper-bikes.jpg" alt="European Sleeper">
+        </div>
+    </div>
+    
+</body>
+</html>
