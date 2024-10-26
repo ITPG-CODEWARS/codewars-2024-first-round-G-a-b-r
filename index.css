@@ -66,7 +66,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #3d99ba;
+    background-color: #0588b8;
 }
 
 header {
@@ -189,6 +189,53 @@ body {
 .bottom-button:hover {
     background-color: #007BFF; /* Цвят на бутона при задържане с мишката */
 }
+
+
+table {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+td {
+    vertical-align: top;
+    color: black;
+    padding: 10px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px; /* Ограничаване на височината на кутийката */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info-image {
+    width: 100%;
+    height: 60%; /* Фиксиран процент за изображението спрямо кутийката */
+    object-fit: cover; /* Поддържа пропорциите на изображението */
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40%; /* Задаване на фиксиран процент за текста */
+}
+
+.subtitle {
+    margin-top: 2%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
 
 
 
