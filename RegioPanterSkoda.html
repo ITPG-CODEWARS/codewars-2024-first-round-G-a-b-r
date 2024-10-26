@@ -1,46 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Влакове</title>
+    <title>RegioPanter Skoda</title>
+    <style>
+        h1 {
+            text-align: center; 
+            margin-top: 0.5%; 
+            margin-bottom: 1%; 
+            color: #333; 
+        }
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .image-gallery img {
+            width: 100%;
+            border-radius: 30px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <style>
-        body {
-            display: block;
-            justify-content: center; 
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    
-        table {
-            margin: 5%; 
-            text-align: center; 
-        }
-    
-        img {
-            width: 20%;
-            height: 30%;
-            display: block;
-            margin: auto; 
-        }
-    
-        p {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 20%;
-        }
-    </style>
-
-    <header>
+    <header> 
         <ul>
-    
             <li><a href="index.html">Начало</a></li>
-            <li><a href = "влакове.html">Влакове</a></li>
-            <li><a href = "контакти.html">Контакти</a></li>
-
+            <li><a class="active" href="влакове.html">Влакове</a></li>
+            <li><a href="контакти.html">Контакти</a></li>
+        </ul>
     </header>
+
+    <div class="content">
+        <h1>RegioPanter Skoda</h1>
+        
+        <div class="section">
+            <h2>Основни характеристики:</h2>
+            <p>Производител: Škoda Transportation.<br>
+            Тип: Дизелов мотрисен влак (DMU).<br>
+            Капацитет: RegioPanter предлага различни конфигурации, които могат да поберат между 90 и 200 пътника, в зависимост от версията.<br>
+            Комфорт: Влаковете са проектирани с комфортни седалки, климатизация и осветление. Предлагат се и места за велосипеди и инвалидни колички.<br>
+            Скорост: Максималната скорост на RegioPanter е около 120 км/ч, което го прави подходящ за бързи регионални услуги.<br>
+            Екологичност: Дизеловите мотриси от този модел са проектирани да бъдат екологични, с намалени емисии и ниски нива на шум.</p>
+        </div>
+
+        <div class="section">
+            <h2>История и употреба</h2>
+            <p>RegioPanter е дизелов мотрисен влак, произведен от чешката компания Škoda Transportation. Проектът е разработен за регионален транспорт и е предназначен да осигури комфортни и бързи услуги в местни и регионални линии.</p>
+        </div>
+
+        <div class="section">
+            <h2>Модели:</h2>
+            <p>Има различни версии на RegioPanter, които се различават по дължина и конфигурация. Те включват:<br>
+            RegioPanter 1: Обикновено с две мотриси.<br>
+            RegioPanter 2: По-дълъг вариант с по-висок капацитет.</p>
+        </div>
+
+        <div class="section">
+            <h2>Използване в чужбина:</h2>
+            <p>RegioPanter е изнасян и в други страни, включително Словакия и Полша, където е адаптиран за местните нужди и условия на работа.<br>
+            Този модел влак е пример за модерна железопътна техника, която съчетава удобство, ефективност и екологичност.</p>
+        </div>
+
+        <div class="image-gallery">
+            <img src="Image-2-RegioPanter.png" alt="RegioPanter Image 1">
+            <img src="Image-3-RegioPanter.png" alt="RegioPanter Image 2">
+            <img src="Image-4-RegioPanter.png" alt="RegioPanter Image 3">
+        </div>
+    </div>
+    
+</body>
+</html>
+
