@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Влакове</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: contain;  
+            background-attachment: fixed;
+            background-color: #c8d1ce; 
+            color: black; 
+            font-family: Arial, sans-serif;
+        }
+
+        .train-types {
+            display: flex; /* Използване на Flexbox за подреждане */
+            justify-content: center; /* Разстояние между елементите */
+            margin: 2%; /* Отстъп на контейнера */
+        }
+
+        .train-box {
+            background-color: white; /* Фон на правоъгълника */
+            border-radius: 30px; /* Заобляне на ъглите */
+            text-align: center; /* Центрира текста */
+            margin: 1%; /* Отстъп между правоъгълниците */
+            padding: 20px; /* Вътрешно отстояние */
+            flex: 1; /* Позволява на всеки правоъгълник да заема еднаква ширина */
+            max-width: 20%; /* Ограничаване на максималната ширина */
+            height: 20%;
+        }
+
+        .train-image {
+            max-width: 100%; /* Ширината на изображението да не излиза извън контейнера */
+            height: auto; /* Автоматично запазване на пропорции */
+            border-radius: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <style>
-        body {
-            display: block;
-            justify-content: center; 
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    
-        table {
-            margin: 5%; 
-            text-align: center; 
-        }
-    
-        img {
-            width: 20%;
-            height: 30%;
-            display: block;
-            margin: auto; 
-        }
-    
-        p {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20%;
-        }
-    </style>
+<header> 
+    <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a class="active" href="влакове.html">Влакове</a></li>
+        <li><a href="контакти.html">Контакти</a></li>
+    </ul>
+</header>
+<div>
+<div class="train-types">
+    <div class="train-box">
+        <img src="RegioPanterSkoda.png" alt="Regio Panter (Škoda)" class="train-image">
+        <h3>Regio Panter (Škoda)</h3>
+        <a href="RegioPanterSkoda.html" class="more-info-btn">Повече информация</a>
+    </div>
+</div>
+<div class="train-types">
+<div class="train-box">
+    <img src="EuropeanSleeper.jpg" alt="European Sleeper" class="train-image">
+    <h3>European Sleeper</h3>
+    <a href="EuropeanSleeper.html" class="more-info-btn">Повече информация</a>
+</div>
+</div>
+<div class="train-types">
+<div class="train-box">
+    <img src="OrientExpress.jpg" alt="Orient Express" class="train-image">
+    <h3>Orient Express</h3>
+    <a href="OrientExpress.html" class="more-info-btn">Повече информация</a>
+</div>
+</div>
+<div class="train-types">
+<div class="train-box">
+    <img src="пътнически-влакове.png" alt="Пътнически влакове" class="train-image">
+    <h3>Пътнически влакове</h3>
+    <a href="пътнически влакове.html" class="more-info-btn">Повече информация</a>
+</div>
+</div>
+<div class="train-types">
+<div class="train-box">
+    <img src="товарни-влакове.png" alt="Пътнически влакове" class="train-image">
+    <h3>Товарни влакове</h3>
+    <a href="товарни влакове.html" class="more-info-btn">Повече информация</a>
+</div>
+</div>
 
-    <header>
-        <ul>
-    
-            <li><a href="index.html">Начало</a></li>
-            <li><a href = "влакове.html">Влакове</a></li>
-            <li><a href = "контакти.html">Контакти</a></li>
-
-    </header>
-
-    <table>
-        <tr>
-            <td>
-                <a href="RegioPanterSkoda.html"><img src="RegioPanterSkoda.png" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">Regio Panter Skoda</p></b>
-            </td>
-
-            <td>
-                <a href="EuropeanSleeper.html"><img src="EuropeanSleeper.jpg" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">European Sleeper</p></b>
-            </td>
-            <td>
-            <a href="OrientExpress.html"><img src="OrientExpress.jpg" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">Orient Express</p></b>
-            </td>
-        </tr>
-    </table>
-    
-    <table>
-
-        <tr>
-            <td>
-
-                <a href="пътнически влакове.html"><img src="пътнически-влакове.png" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">Пътнически влакове</p></b>
-
-            </td>
-
-            <td>
-
-                <a href="товарни влакове.html"><img src="товарни-влакове.png" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">Товарни влакове</p></b>
-                
-            </td>
-
-            <td>
-
-                <a href="високоскоростни влакове.html"><img src="високоскоростни-влакове.png" style = "width: 50%; height: 60%"></a>
-                <b><p style = "text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem;">Високоскоростни влакове</p></b>
-
-            </td>
-        </tr>
-    </table>
-
-    
-    
+<div class="train-types">
+<div class="train-box">
+    <img src="високоскоростни-влакове.png" alt="Високоскоростни влакове" class="train-image">
+    <h3>Високоскоростни влакове</h3>
+    <a href="високоскоростни влакове.html" class="more-info-btn">Повече информация</a>
+</div>
+</div>
 </body>
 </html>
