@@ -97,7 +97,7 @@ body {
     flex-direction: column;
     align-items: center; /* Центрира съдържанието хоризонтално */
     justify-content: top; /* Центрира съдържанието вертикално */
-    height: 100vh; /* Прави контейнера да заема цялата височина на екрана */
+    height: 80vh; /* Прави контейнера да заема цялата височина на екрана */
     text-align: center; /* Центрира текста */
 }
 
@@ -193,7 +193,7 @@ body {
 
 table {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     text-align: center;
 }
 
