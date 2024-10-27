@@ -10,13 +10,14 @@
 .contact
 {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 30px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #c8d1ce;
+    height: 1%;
 }
 .contact .content
 {
@@ -28,23 +29,26 @@
     font-size: 3em;
     color: black;
     font-weight: 500
+    
 }
 .contact .content p
 {
     color: black;
     font-size: 1.1em;
     font-weight: 300;
+    margin-bottom: 5%;
 }
-.container
-{
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     background: #c8d1ce;
-    margin-top: 30px;
-}
+    margin-top: 60px; 
+    max-height: 50vh; /* Adjust the percentage as needed */
+  }
+
 .container .contactInfo
 {
     width: 50%;
@@ -54,7 +58,7 @@
 .container .contactInfo .box
 {
     position: relative;
-    padding: 10px 0;
+    padding: 20px;
     display: flex;
     cursor: pointer;
 }
@@ -113,7 +117,7 @@
 .container .contactInfo .txt 
 {
     color: black;
-    margin-top: 20px;
+    
     font-weight: 500;
     border-left: 50px solid #007BFF;
     padding-left: 10px;
