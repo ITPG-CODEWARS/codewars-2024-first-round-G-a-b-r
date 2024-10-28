@@ -106,15 +106,6 @@ body {
     height: auto;
     margin-bottom: 0.3rem; /* Разстояние между изображението и текста */
 }
-
-.subtitle {
-    font-size: 3rem;
-    font-weight: bold;
-    color: black;
-}
-
-
-
 /* Стил за основния контейнер */
 .container {
     display: flex;
